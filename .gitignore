@@ -18,5 +18,6 @@ wp-config.php
 wp-content/advanced-cache.php
 wp-content/backup-db/**
 wp-content/cache/**
+wp-content/gallery/**
 wp-content/uploads/**
 wp-content/wp-cache-config.php
