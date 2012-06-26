@@ -58,7 +58,7 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 				<li style="border-left: 1px solid #A09577;"><a href="http://www.miamivalleymusicfest.com/">Home</a></li>
 				<li><a href="#">Music &amp; Arts</a>
 					<ul>
-						<li><a href="/lineup/">Lineup 2011</a></li>
+						<li><a href="/lineup/">Lineup</a></li>
 						<li><a href="/picture-gallery/">Picture Gallery</a></li>
 						<li><a href="/vendors/">Vendors</a></li>
 						<li><a href="/potential-artists/">Potential Artists</a></li>
@@ -75,7 +75,7 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 				</li>
 				<li><a href="#">Sponsors</a>
 					<ul>
-						<li><a href="/sponsors/">Sponsors 2011</a></li>
+						<li><a href="/sponsors/">Sponsors</a></li>
 						<li><a href="/donate/">Donate</a></li>
 					</ul>
 				</li>
@@ -83,7 +83,7 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 					<ul>
 						<li><a href="/volunteer/">Volunteer</a></li>
 						<li><a href="/interested-charity-orgs/">Interested Charity Orgs</a></li>
-						<li><a href="/charities/">Charities 2011</a></li>
+						<li><a href="/charities/">Charities</a></li>
 						<li><a href="/past-charities/">Past Charities</a></li>
 					</ul>
 				</li>
