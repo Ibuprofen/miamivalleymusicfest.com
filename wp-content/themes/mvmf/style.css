@@ -98,11 +98,6 @@ border: 1px solid #ddd;
 	border-left: 1px solid #ddd;
 }
 
-#footer {
-	background: #E5E5E5 url('images/footer.gif') no-repeat top;
-	border: none;
-	}
-
 small {
 	font-family: Arial, Helvetica, Sans-Serif;
 	font-size: 0.9em;
@@ -274,19 +269,22 @@ acronym, abbr, span.caps
 }
 
 #footer {
+	background-color: #7D5823;
+	border: none;
 	color: #fff;
-	padding: 0;
+	padding: 7px 0px;
 	margin: 0 auto;
-	width: 1000px;
-	height: 28px;
+	width: 995px;
 	clear: both;
 	}
 
 #footer p {
 	margin: 0;
-	padding: 1px 0;
 	text-align: center;
 	}
+#footer a {
+  color: #fff;
+}	
 /* End Structure */
 
 
