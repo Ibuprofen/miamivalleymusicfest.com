@@ -18,9 +18,11 @@ Tags: fixed width, two columns, widgets
 body {
 	font-size: 62.5%; /* Resets 1em to 10px */
 	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
-	background: #d5d6d7 url('images/bgcolor.gif');
+	background-color: #E5E5E5;
 	color: #333;
 	text-align: center;
+	margin: 0px 0 20px 0;
+	padding: 0;
 	}
 
 a {
@@ -34,7 +36,10 @@ a:hover {
 	}
 
 #page {
-	background-color: white;
+	margin: 0px auto;
+	padding: 0;
+	width: 995px;
+	background-color: #FFF;
 	text-align: left;
 
   -webkit-box-shadow: #666 0px 0px 15px;
@@ -42,16 +47,20 @@ a:hover {
           box-shadow: #666 0px 0px 15px;
           
   behavior: url(/wp-content/themes/mvmf/PIE.htc);
-
 	}
 
 #header {
-	background: #E5E5E5 url('images/header05.gif') no-repeat bottom center;
+	background: #E5E5E5 url('/images/header06.png') no-repeat top center;
+	width: 995px;
+	height: 213px;
+	display: block;
+	padding: 0;
 	}
 
 #headerimg 	{
-	height: 351px;
-	width: 1000px;
+  margin: 0;
+	width: 995px;
+	height: 213px;
 	}
 
 #content {
@@ -210,31 +219,6 @@ acronym, abbr, span.caps
 
 
 /* Begin Structure */
-body {
-	margin: 0px 0 20px 0;
-	padding: 0;
-	}
-
-#page {
-	background-color: white;
-	margin: 0px auto;
-	padding: 0;
-	width: 1000px;
-	}
-
-#header {
-	background-color: #E5E5E5;
-	padding: 0;
-	height: 351px;
-	width: 1000px;
-	}
-
-#headerimg {
-	margin: 0;
-	height: 320px;
-	width: 100%;
-	}
-
 .narrowcolumn {
 	float: left;
 	padding: 0px 0px 20px 65px;
