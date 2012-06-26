@@ -50,7 +50,7 @@ a:hover {
 	}
 
 #header {
-	background: #E5E5E5 url('/images/header06.png') no-repeat top center;
+	background: #E5E5E5 url('images/header06.png') no-repeat top center;
 	width: 995px;
 	height: 213px;
 	display: block;
