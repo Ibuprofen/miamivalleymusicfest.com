@@ -2,7 +2,7 @@
 Theme Name: Miami Valley Music Fest
 Theme URI: http://www.miamivalleymusicfest.com
 Description: Based on the WP Default.
-Version: 1.0
+Version: 1.5
 Author: Tony Rieker
 Author URI: http://plenary.org/
 Tags: fixed width, two columns, widgets
@@ -36,6 +36,13 @@ a:hover {
 #page {
 	background-color: white;
 	text-align: left;
+
+  -webkit-box-shadow: #666 0px 0px 15px;
+     -moz-box-shadow: #666 0px 0px 15px;
+          box-shadow: #666 0px 0px 15px;
+          
+  behavior: url(/wp-content/themes/mvmf/PIE.htc);
+
 	}
 
 #header {
@@ -673,8 +680,3 @@ div.aligncenter {
 	margin: 0;
 }
 /* End captions */
-
-
-/* "Daisy, Daisy, give me your answer do. I'm half crazy all for the love of you.
-	It won't be a stylish marriage, I can't afford a carriage.
-	But you'll look sweet upon the seat of a bicycle built for two." */

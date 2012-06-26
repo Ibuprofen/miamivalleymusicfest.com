@@ -44,6 +44,7 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 </style>
 <![endif]-->
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/jqueryslidemenu.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/PIE-1.0.0.js"></script>
 </head>
 <body>
 <div id="page">
