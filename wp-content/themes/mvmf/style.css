@@ -21,8 +21,9 @@ body {
 	background-color: #E5E5E5;
 	color: #333;
 	text-align: center;
-	margin: 0px 0 20px 0;
+	margin: 0 0 20px 0;
 	padding: 0;
+	background: #E5E5E5 url(images/bg-rays01.jpg) scroll no-repeat 0 0;
 	}
 
 a {
@@ -216,9 +217,8 @@ acronym, abbr, span.caps
 /* Begin Structure */
 .narrowcolumn {
 	float: left;
-	padding: 0px 0px 20px 65px;
+	padding: 0px 65px 20px 65px;
 	margin: 0px 0px 0px;
-	width: 870px;
 	}
 
 .widecolumn {
