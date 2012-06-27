@@ -46,10 +46,11 @@ a:hover {
      -moz-box-shadow: #666 0px 0px 5px;
           box-shadow: #666 0px 0px 5px;
           
-  behavior: url(/wp-content/themes/mvmf/PIE.htc);
+  behavior: url(/wp-content/themes/mvmf/PIE-1.0.0.htc);
 
   border-right: 1px solid black;
   border-left: 1px solid black;
+  border-bottom: 1px solid black;
 
 	}
 
