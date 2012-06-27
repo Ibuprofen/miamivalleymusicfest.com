@@ -22,7 +22,7 @@ body {
 	text-align: center;
 	margin: 0 0 20px 0;
 	padding: 0;
-	background: #DEDEDE url(images/bg-rays03.jpg) scroll no-repeat -1232px -1384px;
+	background: #DEDEDE url(images/bg-rays05.jpg) scroll no-repeat center top;
 	}
 
 a {
@@ -42,11 +42,15 @@ a:hover {
 	background-color: #FFF;
 	text-align: left;
 
-  -webkit-box-shadow: #666 0px 0px 15px;
-     -moz-box-shadow: #666 0px 0px 15px;
-          box-shadow: #666 0px 0px 15px;
+  -webkit-box-shadow: #666 0px 0px 5px;
+     -moz-box-shadow: #666 0px 0px 5px;
+          box-shadow: #666 0px 0px 5px;
           
   behavior: url(/wp-content/themes/mvmf/PIE.htc);
+
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+
 	}
 
 #header {
