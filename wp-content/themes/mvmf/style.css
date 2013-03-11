@@ -223,12 +223,13 @@ acronym, abbr, span.caps
 	float: left;
 	padding: 0px 65px 20px 65px;
 	margin: 0px 0px 0px;
+	width: 865px;
 	}
 
 .widecolumn {
 	padding: 10px 0 20px 0;
 	margin: 5px 0 0 150px;
-	width: 0px;
+	width: 845px;
 	}
 
 .post {
@@ -454,9 +455,6 @@ ol li, #sidebar ul ol li {
 	padding: 1px;
 	}
 
-.entry form { /* This is mainly for password protected posts, makes them look better. */
-	text-align:center;
-	}
 
 select {
 	width: 130px;

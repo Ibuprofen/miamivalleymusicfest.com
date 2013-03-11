@@ -23,6 +23,8 @@
 <?php wp_head(); ?>
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/jqueryslidemenu.css" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/main.css" />
+
 
 <!--[if lte IE 7]>
 <style type="text/css">
@@ -30,7 +32,12 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 </style>
 <![endif]-->
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/jqueryslidemenu.js"></script>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/PIE-1.0.0.js"></script>
+<!--[if lte IE 9]>
+  <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/PIE-1.0.0.js"></script>
+<![endif]-->
+  <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/main.js"></script>
+
+
 </head>
 <body>
 <div id="page">
@@ -43,7 +50,7 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 		<div id="myslidemenu" class="jqueryslidemenu">
 			<ul>
 				<li style="border-left: 1px solid #A09577;"><a href="http://www.miamivalleymusicfest.com/">Home</a></li>
-				<li><a href="#">Music &amp; Arts</a>
+				<li><a href="#" class="noclick">Music &amp; Arts</a>
 					<ul>
 						<li><a href="/lineup/">Lineup</a></li>
 						<li><a href="/picture-gallery/">Picture Gallery</a></li>
@@ -53,20 +60,20 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 					</ul>
 				</li>
 				<li><a href="/tickets/">Tickets</a></li>
-				<li><a href="#">Location</a>
+				<li><a href="#" class="noclick">Location</a>
 					<ul>
 						<li><a href="/camping/">Camping</a></li>
 						<li><a href="/rules/">Rules</a></li>
 						<li><a href="/directions/">Directions</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Sponsors</a>
+				<li><a href="#" class="noclick">Sponsors</a>
 					<ul>
 						<li><a href="/sponsors/">Sponsors</a></li>
 						<li><a href="/donate/">Donate</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Charity Rocks</a>
+				<li><a href="#" class="noclick">Charity Rocks</a>
 					<ul>
 						<li><a href="/volunteer/">Volunteer</a></li>
 						<li><a href="/interested-charity-orgs/">Interested Charity Orgs</a></li>
@@ -74,13 +81,13 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 						<li><a href="/past-charities/">Past Charities</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Contact</a>
+				<li><a href="#" class="noclick">Contact</a>
 					<ul>
 						<li><a href="/press-kit/">Press Kit</a></li>
 						<li><a href="/contact-us/">Contact Us</a></li>
 					</ul>
 				</li>
-				<li><a href="#">MVMFA</a>
+				<li><a href="#" class="noclick">MVMFA</a>
 					<ul>
 						<li><a href="/mission/">Mission</a></li>
 						<li><a href="/members/">Members</a></li>
