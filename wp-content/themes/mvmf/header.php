@@ -59,7 +59,12 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 						<li><a href="/past-artists/">Past Artists</a></li>
 					</ul>
 				</li>
-				<li><a href="/tickets/">Tickets</a></li>
+				<li><a href="/tickets/" class="noclick">Tickets</a>
+					<ul>
+						<li><a href="/gotr-tickets/">GOTR After Party</a></li>
+						<li><a href="/tickets/">Music Fest</a></li>
+					</ul>
+				</li>
 				<li><a href="#" class="noclick">Location</a>
 					<ul>
 						<li><a href="/camping/">Camping</a></li>
