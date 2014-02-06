@@ -61,7 +61,7 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 				</li>
 				<li><a href="/tickets/" class="noclick">Tickets</a>
 					<ul>
-						<li><a href="/gotr-tickets/">GOTR After Party</a></li>
+
 						<li><a href="/tickets/">Music Fest</a></li>
 					</ul>
 				</li>
@@ -82,7 +82,7 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 					<ul>
 						<li><a href="/volunteer/">Volunteer</a></li>
 						<li><a href="/interested-charity-orgs/">Interested Charity Orgs</a></li>
-						<li><a href="/charities/">Charities</a></li>
+						<li><a href="/charity-voting-2013/">Charities</a></li>
 						<li><a href="/past-charities/">Past Charities</a></li>
 					</ul>
 				</li>

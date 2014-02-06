@@ -664,3 +664,23 @@ div.aligncenter {
 	margin: 0;
 }
 /* End captions */
+
+/* Poll Styles */
+.foundation_information
+{
+	border-bottom: solid #afafaf 1px;
+	padding-bottom: 2px;
+}
+.poll_question
+{
+	margin-left: 2px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.poll_answer
+{
+	margin-left: 2px;
+}
+
+/* End Poll Styles */
