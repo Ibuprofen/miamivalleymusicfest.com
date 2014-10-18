@@ -471,6 +471,15 @@
 				$this->update_to_4_9_1();
 				update_option( "yop_poll_version", $wpdb->yop_poll_version );
 			}
+
+			if ( version_compare( $installed_version, '4.9.1', '<=' ) ){
+
+			update_option( "yop_poll_version", $wpdb->yop_poll_version );
+			}
+			if ( version_compare( $installed_version, '4.9.2', '<=' ) ){
+
+			update_option( "yop_poll_version", $wpdb->yop_poll_version );
+			}
 		}
 
 		public function update_to_4_2() {
@@ -7809,6 +7818,8 @@ EOT;
 				$poll_id   = isset ( $_REQUEST ['poll_id'] ) ? $_REQUEST ['poll_id'] : NULL;
 				$unique_id = isset ( $_REQUEST ['unique_id'] ) ? $_REQUEST ['unique_id'] : NULL;
 				$location  = isset ( $_REQUEST ['location'] ) ? $_REQUEST ['location'] : NULL;
+                $unique_id =strip_tags(xss_clean($unique_id));
+                $location  = strip_tags(xss_clean($location));
 				if ( $poll_id ){
 					require_once( $this->_config->plugin_inc_dir . '/yop_poll_model.php' );
 					$yop_poll_model = new YOP_POLL_MODEL ( $poll_id );
@@ -7835,11 +7846,16 @@ EOT;
 			$error   = '';
 			$success = '';
 			$message = '';
+
 			if ( is_admin() ){
 				$poll_id   = isset ( $_REQUEST ['poll_id'] ) ? $_REQUEST ['poll_id'] : 0;
 				$unique_id = isset ( $_REQUEST ['unique_id'] ) ? $_REQUEST ['unique_id'] : '';
 				$location  = isset ( $_REQUEST ['location'] ) ? $_REQUEST ['location'] : 'page';
 				$tr_id     = isset ( $_REQUEST ['tr_id'] ) ? $_REQUEST ['tr_id'] : '';
+                $unique_id =strip_tags(xss_clean($unique_id));
+                $location  = strip_tags(xss_clean($location));
+                $tr_id     = strip_tags(xss_clean($tr_id));
+                if ( wp_verify_nonce( $_REQUEST['yop-poll-nonce-' . $poll_id . $unique_id], 'yop_poll-' . $poll_id . $unique_id . '-user-actions' ) ){
 				if ( $poll_id ){
 					require_once( $this->_config->plugin_inc_dir . '/yop_poll_model.php' );
 					$yop_poll_model = new YOP_POLL_MODEL ( $poll_id );
@@ -7859,6 +7875,13 @@ EOT;
 					$error = __( 'Invalid Request! Try later!', 'yop_poll' );
 				}
 			}
+
+                            else {
+                                    $error = __( 'Bad Request! Try later!', 'yop_poll' );
+                                }
+
+            }
+
 			print '[ajax-response]' . json_encode( array( 'error' => $error, 'success' => $success, 'message' => $message ) ) . '[/ajax-response]';
 			die ();
 		}
@@ -7872,6 +7895,9 @@ EOT;
 				$unique_id = isset ( $_REQUEST ['unique_id'] ) ? $_REQUEST ['unique_id'] : '';
 				$location  = isset ( $_REQUEST ['location'] ) ? $_REQUEST ['location'] : 'page';
 				$tr_id     = isset ( $_REQUEST ['tr_id'] ) ? $_REQUEST ['tr_id'] : '';
+                $unique_id =strip_tags(xss_clean($unique_id));
+                $location  = strip_tags(xss_clean($location));
+                $tr_id     = strip_tags(xss_clean($tr_id));
 				if ( $poll_id ){
 					require_once( $this->_config->plugin_inc_dir . '/yop_poll_model.php' );
 					$yop_poll_model = new YOP_POLL_MODEL ( $poll_id );
